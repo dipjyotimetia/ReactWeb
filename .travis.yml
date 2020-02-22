@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - '10'
+  - '11'
+  - '12'
+  - '13'
+
+if: tag is blank
+
+cache:
+  yarn: true
+  directories:
+    - node_module
+
+script:
+  - yarn type-check
+  - yarn lint
+  - yarn test:cov
+  - yarn build
+
+after_success:
+  - yarn coveralls
+
+notifications:
+  email:
+    on_failure: change
