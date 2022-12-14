@@ -254,7 +254,7 @@
     "cross-env": "^7.0.0",
     "css-modules-require-hook": "^4.2.3",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.21.2",
     "history": "^4.10.1",
     "hpp": "^0.2.3",
